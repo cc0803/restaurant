@@ -1,22 +1,95 @@
+@font-face {
+    font-family: 'Grafitti';
+    src: url('./grafitti.ttf');
+}
+
+:root {
+    --black: rgb(45, 39, 31);
+    --beige: rgb(255, 237, 205);
+}
+
+body {
+    margin: 0;
+}
+
 header {
     width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: var(--beige);
+    z-index: 10;
 }
 
 header>ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     width: 40%;
     padding: 0;
     margin: 0;
 }
 
 ul {
+    font-size: 2rem;
+}
+
+header>ul>li {
+    font-family: monospace;
+    justify-self: center;
+    padding: 1rem;
+    font-family: 'Grafitti';
+    letter-spacing: 2px;
+}
+
+header>ul>li:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    height: 200vh;
+    background-color: beige;
+    margin-top: 10vh;
+    width: 100vw;
+}
+
+.head {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 6rem;
+    color: rgb(32, 241, 0);
+    text-align: center;
+    transform: rotate(-2deg);
+    font-family: 'Grafitti';
+    width: 400px;
+}
+
+footer {
+    height: 30vh;
+    background-color: var(--black);
+    font-family: monospace, serif;
+}
+
+footer>h3 {
+    margin: 0;
     font-size: 1.5rem;
-    line-height: 10vh;
-    vertical-align: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--beige);
+}
+
+footer p {
+    text-align: center;
+    color: var(--beige);
 }
