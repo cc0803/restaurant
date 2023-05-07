@@ -22,7 +22,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    color: var(--beige);
     z-index: 10;
 }
 
@@ -36,16 +35,16 @@ header>ul {
     margin: 0;
 }
 
-ul {
-    font-size: 2rem;
-}
-
-header>ul>li {
+header>ul button {
     font-family: monospace;
     justify-self: center;
     padding: 1rem;
     font-family: 'Grafitti';
     letter-spacing: 2px;
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+    color: var(--beige);
 }
 
 header>ul>li:hover {
@@ -55,16 +54,10 @@ header>ul>li:hover {
 
 
 .content {
-    height: 200vh;
     margin-top: 10vh;
     width: 100vw;
-    background-image: url('./tofu.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.content.home {
-    background-image: url('./tofu.jpg');
+    padding-bottom: 5rem;
+    background-image: url('../src/tofu.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -119,4 +112,13 @@ h2 {
     font-size: 1.7rem;
     font-weight: 600;
     margin: 3rem 0;
+}
+
+.tofu-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }

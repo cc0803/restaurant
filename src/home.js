@@ -1,9 +1,6 @@
-import './styles.css';
-
 const content = document.querySelector(".content");
 
 export default function createHome() {
-    console.log(content);
     //content.classList.add("home");
     content.appendChild(heading()); 
 
