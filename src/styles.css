@@ -51,6 +51,8 @@ header>ul>li {
 header>ul>li:hover {
     transform: scale(1.2);
 }
+/* Styles for home page*/
+
 
 .content {
     height: 200vh;
@@ -59,16 +61,6 @@ header>ul>li:hover {
     background-image: url('./tofu.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-.content::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 h1 {
@@ -107,10 +99,15 @@ h2 {
 
 .text-container {
     width: 40vw;
+    padding: 4rem;
+    background-color: rgba(255, 237, 205, 0.5);
     margin: 0 auto;
+    border-radius: 2rem;
 }
 
 .text-container>p {
     font-family: monospace;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 3rem 0;
 }
