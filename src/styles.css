@@ -63,13 +63,22 @@ header>ul>li:hover {
     background-repeat: no-repeat;
 }
 
-h1 {
-    padding-top: 4rem;
-    font-size: 6rem;
+.content.home {
+    background-image: url('./tofu.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1.home-heading {
     color: rgb(32, 241, 0);
     text-align: center;
     transform: rotate(-2deg);
     font-family: 'Grafitti';
+}
+
+h1 {
+    padding-top: 4rem;
+    font-size: 6rem;
 }
 
 footer {
