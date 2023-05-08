@@ -54,9 +54,12 @@ header>ul>li:hover {
 
 
 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 10vh;
     width: 100vw;
-    padding-bottom: 5rem;
     background-image: url('../src/tofu.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -67,10 +70,10 @@ h1.home-heading {
     text-align: center;
     transform: rotate(-2deg);
     font-family: 'Grafitti';
+    margin-bottom: 0;
 }
 
 h1 {
-    padding-top: 4rem;
     font-size: 6rem;
 }
 
@@ -103,7 +106,7 @@ h2 {
     width: 40vw;
     padding: 4rem;
     background-color: rgba(255, 237, 205, 0.5);
-    margin: 0 auto;
+    margin: 4rem auto;
     border-radius: 2rem;
 }
 
@@ -126,8 +129,23 @@ h2 {
 /* Styles for menu.js */
 
 .content.menu {
-    background-image: url('./restaurant.jpg');
+    background-image: url('./restaurant2.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.menu-container {
+    height: 100vh;
+    background-color: rgba(238, 221, 170, 0.85);
+    width: 40vw;
+    padding: 4rem;
+    margin: 4rem;
+    border-radius: 2rem;
+}
+
+.dish-container {
+    width: 100%;
+    height: 20px;
+    background-color: black;
 }
