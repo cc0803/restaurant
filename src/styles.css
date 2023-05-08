@@ -122,3 +122,12 @@ h2 {
     bottom: 0;
     z-index: -1;
 }
+
+/* Styles for menu.js */
+
+.content.menu {
+    background-image: url('./restaurant.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
