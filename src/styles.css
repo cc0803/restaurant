@@ -3,6 +3,10 @@
     src: url('./grafitti.ttf');
 }
 
+* {
+    font-family: monospace;
+}
+
 :root {
     --black: rgb(45, 39, 31);
     --beige: rgb(255, 237, 205);
@@ -36,7 +40,6 @@ header>ul {
 }
 
 header>ul button {
-    font-family: monospace;
     justify-self: center;
     padding: 1rem;
     font-family: 'Grafitti';
@@ -80,7 +83,6 @@ h1 {
 footer {
     height: 30vh;
     background-color: var(--black);
-    font-family: monospace, serif;
 }
 
 footer>h3 {
@@ -98,7 +100,6 @@ footer p {
 
 h2 {
     text-align: center;
-    font-family: monospace;
     font-size: 3rem;
 }
 
@@ -111,7 +112,6 @@ h2 {
 }
 
 .text-container>p {
-    font-family: monospace;
     font-size: 1.7rem;
     font-weight: 600;
     margin: 3rem 0;
@@ -152,7 +152,6 @@ h2 {
 
 h4 {
     text-align: center;
-    font-family: monospace;
     font-size: 1.7rem;
 }
 
@@ -161,7 +160,28 @@ h4 {
 }
 
 .menu-container p {
-    font-family: monospace;
     font-size: 1.2rem;
     margin: 0.5rem
+}
+
+.content.contact {
+    background-color: var(--beige);
+    background-image: none;
+    min-height: 60vh;
+}
+
+.box {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+p.par {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+p.par-heading {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 1rem;
 }
